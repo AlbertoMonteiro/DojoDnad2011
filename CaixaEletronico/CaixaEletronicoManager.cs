@@ -5,7 +5,7 @@ namespace CaixaEletronico
 {
     public class CaixaEletronicoManager
     {
-        private int[] _notas = { 100, 50, 20, 10, 5, 2 };
+        private readonly int[] _notas = { 100, 50, 20, 10, 5, 2 };
 
         public int[] Sacar(int value)
         {
