@@ -1,0 +1,5 @@
+C:\Users\alberto\documents\visual studio 2010\Projects\Teste\CaixaEletronico\bin\Debug\CaixaEletronico.dll
+C:\Users\alberto\documents\visual studio 2010\Projects\Teste\CaixaEletronico\bin\Debug\CaixaEletronico.pdb
+C:\Users\alberto\documents\visual studio 2010\Projects\Teste\CaixaEletronico\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\alberto\documents\visual studio 2010\Projects\Teste\CaixaEletronico\obj\Debug\CaixaEletronico.dll
+C:\Users\alberto\documents\visual studio 2010\Projects\Teste\CaixaEletronico\obj\Debug\CaixaEletronico.pdb

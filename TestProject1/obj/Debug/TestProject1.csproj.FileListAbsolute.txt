@@ -1,0 +1,7 @@
+C:\Users\alberto\documents\visual studio 2010\Projects\Teste\TestProject1\bin\Debug\TestProject1.dll
+C:\Users\alberto\documents\visual studio 2010\Projects\Teste\TestProject1\bin\Debug\TestProject1.pdb
+C:\Users\alberto\documents\visual studio 2010\Projects\Teste\TestProject1\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\alberto\documents\visual studio 2010\Projects\Teste\TestProject1\obj\Debug\TestProject1.dll
+C:\Users\alberto\documents\visual studio 2010\Projects\Teste\TestProject1\obj\Debug\TestProject1.pdb
+C:\Users\alberto\documents\visual studio 2010\Projects\Teste\TestProject1\bin\Debug\CaixaEletronico.dll
+C:\Users\alberto\documents\visual studio 2010\Projects\Teste\TestProject1\bin\Debug\CaixaEletronico.pdb
