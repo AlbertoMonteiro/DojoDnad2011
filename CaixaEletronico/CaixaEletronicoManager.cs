@@ -9,7 +9,6 @@ namespace CaixaEletronico
         const int MAX = 100000;
         static int[] W = new[] { 100, 50, 20, 10, 5, 2 };
         static int[] K = new int[MAX + 1];
-        static int t = 6;
 
         static CaixaEletronicoManager()
         {
@@ -17,7 +16,7 @@ namespace CaixaEletronico
 
             for (int i = 1; i <= MAX; i++) K[i] = -1;
 
-            for (var i = 0; i < t; i++)
+            for (var i = 0; i < W.Length; i++)
                 for (var j = W[i]; j <= MAX; j++)
                     if (K[j] == -1 && K[j - W[i]] >= 0)
                         K[j] = i;
