@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using System.Linq;
+using System;
 
 namespace CaixaEletronico
 {
@@ -9,6 +10,9 @@ namespace CaixaEletronico
 
         public int[] Sacar(int value)
         {
+            if (value <= 1 || value == 3)
+                throw new InvalidOperationException("Não posso sacar esse valor");
+
             var lista = new List<int>();
             int valor = value;
             while (valor > 0)

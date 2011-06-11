@@ -1,11 +1,26 @@
 ﻿using CaixaEletronico;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using System;
 
 namespace TestProject1
 {
     [TestClass]
     public class CaixaEletronicoManagerTest
     {
+        [TestMethod, ExpectedException(typeof(InvalidOperationException))]
+        public void QuandoSaco01()
+        {
+            var caixa = new CaixaEletronicoManager();
+            int[] notas = caixa.Sacar(1);
+        }
+
+        [TestMethod, ExpectedException(typeof(Exception), AllowDerivedTypes = true)]
+        public void QuandoSaco03()
+        {
+            var caixa = new CaixaEletronicoManager();
+            int[] notas = caixa.Sacar(3);
+        }
+
         [TestMethod]
         public void QuandoSaco08()
         {
@@ -132,6 +147,24 @@ namespace TestProject1
             var caixa = new CaixaEletronicoManager();
             int[] notas = caixa.Sacar(59);
             var esperado = new[] { 50, 5, 2, 2 };
+            bool resultado = GetResultado(notas, esperado);
+            Assert.IsTrue(resultado);
+        }
+
+        public void QuandoSaco351()
+        {
+            var caixa = new CaixaEletronicoManager();
+            int[] notas = caixa.Sacar(351);
+            var esperado = new[] { 100, 100, 100, 20, 20, 5, 2, 2, 2 };
+            bool resultado = GetResultado(notas, esperado);
+            Assert.IsTrue(resultado);
+        }
+
+        public void QuandoSaco353()
+        {
+            var caixa = new CaixaEletronicoManager();
+            int[] notas = caixa.Sacar(353);
+            var esperado = new[] { 100, 100, 100, 20, 20, 5, 2, 2, 2, 2 };
             bool resultado = GetResultado(notas, esperado);
             Assert.IsTrue(resultado);
         }
